@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>World Clock</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Choose Region to display Current time</h1>
+        </header>
+        <main>
+            <div class="form-cont">
+                <label for="regionList">Choose Region:</label>
+                <select id="regionList" name="regionList">
+                    <option value="Delhi">Delhi</option>
+                    <option value="London">London</option>
+                    <option value="Tokyo">Tokyo</option>
+                    <option value="New York">New York</option>
+                    <option value="Shanghai">Shanghai</option>
+                    <option value="Berlin">Berlin</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Rome">Rome</option>
+                    <option value="Sao Paulo">Sao Paulo</option>
+                    <option value="Moscow">Moscow</option>
+                    <option value="Toronto">Toronto</option>
+                    <option value="Seoul">Seoul</option>
+                    <option value="Madrid">Madrid</option>
+                    
+                </select>
+            </div>
+            <div class="btn-cont">
+                <button id="disp-btn">Display Time</button>
+            </div>
+            
+            <div id="time-cont"></div>
+        </main>
+    <footer class="footer">
+        <img src="Images/Logo.png" alt="Dev Logo" class="logo">
+        <p>© 2025 World Clock | Developed by <span class="dev-name">Orange Org</span></p>
+    </footer>
+        
+        <script src="script.js"></script>
+    </body>
+    </html>

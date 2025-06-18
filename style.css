@@ -1,0 +1,115 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Header styling */
+header h1 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Form container styling */
+.form-cont {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #bbbbbb;
+}
+
+select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  outline: none;
+}
+
+/* Button styling */
+.btn-cont {
+  margin-bottom: 30px;
+}
+
+#disp-btn {
+  padding: 10px 32px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #3a84ff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#disp-btn:hover {
+  background-color: #296edc;
+}
+
+/* Clock container */
+#time-cont {
+  font-size: 2rem;
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  border-radius: 8px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .form-cont {
+    padding: 15px;
+  }
+
+  #disp-btn {
+    width: 100%;
+  }
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+.dev-name {
+    color: rgb(255, 132, 0);
+    font-weight: bold;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
