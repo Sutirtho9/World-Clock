@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -31,8 +31,9 @@ header h1 {
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
+  height: 120px; 
   width: 100%;
-  max-width: 400px;
+  overflow: auto;  
 }
 
 label {
@@ -53,13 +54,16 @@ select {
   outline: none;
 }
 
-/* Button styling */
+
 .btn-cont {
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 }
 
 #disp-btn {
-  padding: 10px 32px;
+  padding: 10px 20px;
   font-size: 1rem;
   color: #ffffff;
   background-color: #3a84ff;
@@ -73,18 +77,26 @@ select {
   background-color: #296edc;
 }
 
-/* Clock container */
+
 #time-cont {
   font-size: 2rem;
-  margin-top: 20px;
+  margin-top: 0px;
   text-align: center;
   padding: 20px;
   color: #00ffcc;
   border: 2px solid #00ffcc;
   border-radius: 8px;
+  min-height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Responsive tweaks */
+main{
+  padding-bottom: 40px;
+}
+
+
 @media (max-width: 480px) {
   .form-cont {
     padding: 15px;
@@ -102,6 +114,7 @@ select {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     margin-top: 40px;
     font-family: 'Roboto', sans-serif;
+    width: 100%   ;
 }
 .dev-name {
     color: rgb(255, 132, 0);
